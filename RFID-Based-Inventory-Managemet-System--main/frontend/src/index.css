@@ -1,0 +1,35 @@
+/* #navcontent{min-height: 64px}
+#bodycontent{margin-top: 64px}
+#footercontent{border-bottom: 64px} */
+
+/* Set a minimum height for the header */
+#navcontent {
+    min-height: 12vh; /* Header height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Adjust as needed */
+    z-index: 1000;
+  }
+  
+  /* Set the body content height and adjust for header and footer */
+  #bodycontent {
+    min-height: 78vh; /* Body height */
+    margin-top: 12vh; /* Push down for the fixed header */
+    margin-bottom: 10vh; /* Push up for the fixed footer */
+    padding: 20px; /* Optional for spacing */
+    overflow: auto; /* Scroll only within body content if needed */
+  }
+  
+  /* Set a minimum height for the footer */
+  #footercontent {
+    min-height: 10vh; /* Footer height */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Adjust as needed */
+    z-index: 1000;
+  }
+  
